@@ -23,10 +23,10 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: "npm"
       # To install dependencies locked inside pakage-lock.json
-      - name: Install dependencies
+      - name: Installing node_modules
         run: npm ci
       # To check linting
-      - name: Check lint
+      - name: Running ESLint
         run: npm run lint
       # To create build of project
       - name: Build
