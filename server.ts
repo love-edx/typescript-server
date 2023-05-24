@@ -4,7 +4,7 @@ const app = express();
 const PORT = process.env.PORT || 4000;
 
 async function helloWorld() {
-    return { status: 200, message: "Hello World" };
+    return { status: 200, message: "Hello Actions" };
 }
 
 app.listen(PORT, () =>
