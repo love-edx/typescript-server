@@ -25,6 +25,3 @@ jobs:
       # To install dependencies locked inside pakage-lock.json
       - name: Installing node_modules
         run: npm ci
-      # To create build of project
-      - name: Build
-        run: npm build
