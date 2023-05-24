@@ -1,0 +1,33 @@
+# This workflow will do a clean installation of node dependencies
+name: Node.js CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [14.x, 16.x, 18.x]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: "npm"
+      # To install dependencies locked inside pakage-lock.json
+      - name: Install dependencies
+        run: npm ci
+      # To check linting
+      - name: Check lint
+        run: npm run lint
+      # To create build of project
+      - name: Build
+        run: npm run build
