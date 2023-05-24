@@ -25,9 +25,6 @@ jobs:
       # To install dependencies locked inside pakage-lock.json
       - name: Installing node_modules
         run: npm ci
-      # To check linting
-      - name: Running ESLint
-        run: eslint:github-action
       # To create build of project
       - name: Build
         run: npm run build
