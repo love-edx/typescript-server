@@ -17,8 +17,8 @@ describe('', function () {
         }).catch(error => {
             done(new Error(error.message));
         });
-        after(() => {
-            exit()
-        })
     });
+    after(() => {
+        exit()
+    })
 })
