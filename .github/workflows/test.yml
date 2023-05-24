@@ -10,7 +10,7 @@ on:
     branches: ["main"]
 
 jobs:
-  hello:
+  tests:
     runs-on: ubuntu-latest
 
     # strategy:
@@ -19,10 +19,16 @@ jobs:
     #     # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-      name: Hello World
-      run: echo "Hello, test action is working"
-      # - uses: actions/checkout@v3
-      # - name: Use Node.js ${{ matrix.node-version }}
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Setup Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16.13
+      - name: Install Dependencies
+        run: npm ci
+      - name: Run Test
+        run: npm test
       #   uses: actions/setup-node@v3
       #   with:
       #     node-version: ${{ matrix.node-version }}
