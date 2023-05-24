@@ -12,7 +12,7 @@ describe('', function () {
         indexFunction.then(data => {
             expect(data).to.be.an('object').with.all.keys('status', 'message');
             expect(data.status).to.be.an('number');
-            expect(data.message).to.be.an('string');
+            expect(data.message).to.be.an('number');
             done()
         }).catch(error => {
             done(new Error(error.message));
