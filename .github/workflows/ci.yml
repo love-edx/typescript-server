@@ -27,7 +27,7 @@ jobs:
         run: npm ci
       # To check linting
       - name: Running ESLint
-        cmd: eslint:github-action
+        run: eslint:github-action
       # To create build of project
       - name: Build
         run: npm run build
