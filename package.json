@@ -6,7 +6,7 @@
   "scripts": {
     "start": "nodemon server.ts",
     "build": "tsc --project ./",
-    "test": "mocha -r ts-node/register tests/*.ts --timeout 100000 $1"
+    "test": "mocha -r ts-node/register tests/index.ts --timeout 100 $1"
   },
   "author": "love",
   "license": "MIT",
