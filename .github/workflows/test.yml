@@ -19,7 +19,7 @@ jobs:
     #     # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-      - name: Hello World
+      name: Hello World
       run: echo "Hello, test action is working"
       # - uses: actions/checkout@v3
       # - name: Use Node.js ${{ matrix.node-version }}
