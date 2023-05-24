@@ -20,7 +20,7 @@ jobs:
 
     steps:
       - name: Hello World
-      run: echo: "Hello, test action is working"
+      run: echo "Hello, test action is working"
       # - uses: actions/checkout@v3
       # - name: Use Node.js ${{ matrix.node-version }}
       #   uses: actions/setup-node@v3
