@@ -8,6 +8,7 @@
     "build": "tsc --project ./",
     "lint:js": "eslint server.ts",
     "lint": "npm run lint:js",
+    "eslint:github-action": "node ./node_modules/eslint/bin/eslint . --ignore-path .gitignore --max-warnings 0",
     "test": "mocha -r ts-node/register tests/index.ts --timeout 100 $1"
   },
   "author": "love",
