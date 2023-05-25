@@ -1,6 +1,6 @@
 {
-  "name": "node-typescript-demo",
-  "version": "1.0.0",
+  "name": "ts-server-demo",
+  "version": "0.0.1",
   "description": "",
   "main": "server.js",
   "scripts": {
@@ -8,11 +8,8 @@
     "build": "rm -rf ./dist && tsc",
     "lint:js": "eslint server.ts",
     "lint": "npm run lint:js",
-    "eslint:github-action": "node ./node_modules/eslint/bin/eslint . --ignore-path .gitignore --max-warnings 0",
     "test": "mocha -r ts-node/register tests/index.ts --timeout 100 $1"
   },
-  "author": "love",
-  "license": "MIT",
   "dependencies": {
     "express": "^4.17.1",
     "latest": "^0.2.0",
