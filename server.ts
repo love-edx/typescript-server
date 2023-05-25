@@ -4,7 +4,7 @@ const app = express();
 const PORT = process.env.PORT || 4000;
 
 async function helloWorld() {
-    return { status: 200, message: "Github actions" };
+    return { status: 200, message: "Github Multiple actions" };
 }
 
 app.listen(PORT, () =>
