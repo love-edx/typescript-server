@@ -43,5 +43,5 @@ jobs:
           scope: "@love-edx"
       - run: npm ci
       - run: npm publish
-        env:
-          GITHUB_TOKEN: ${{secrets.TOKEN}}
+        # env:
+        #   GITHUB_TOKEN: ${{secrets.TOKEN}}
