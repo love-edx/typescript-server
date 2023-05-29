@@ -1,25 +1,25 @@
-name: Generate changelog
+# This workflow warns and then closes issues and PRs that have had no activity for a specified amount of time.
+# You can adjust the behavior by modifying this file.
+# For more information, see:
+# https://github.com/actions/stale
+name: Mark stale issues and pull requests
 
-# on:
-#   release:
-#     types: [created, edited]
 on:
-  push:
-    branches: ["main"]
-  pull_request:
-    branches: ["main"]
+  schedule:
+    - cron: "32 13 * * *"
 
 jobs:
-  generate-changelog:
+  stale:
     runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
+
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/stale@v5
         with:
-          fetch-depth: 0
-      - uses: BobAnkh/auto-generate-changelog@v1.2.4
-        with:
-          REPO_NAME: "love-edx/typescript-server"
-          ACCESS_TOKEN: ${{secrets.TOKEN}}
-          PATH: "CHANGELOG.md"
-          COMMIT_MESSAGE: "docs(CHANGELOG): update release notes"
-          TYPE: "feat:Feature, fix:Bug, perf:Performance Improvements"
+          repo-token: ${{ secrets.TOEKN }}
+          stale-issue-message: "Stale issue message"
+          stale-pr-message: "Stale pull request message"
+          stale-issue-label: "no-issue-activity"
+          stale-pr-label: "no-pr-activity"
