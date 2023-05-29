@@ -15,6 +15,7 @@ describe('', function () {
             expect(data.message).to.be.an('number');
             done()
         }).catch(error => {
+            console.log("hy")
             done(new Error(error.message));
         });
     });
