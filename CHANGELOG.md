@@ -1,5 +1,28 @@
 # CHANGELOG
 
+## [v1.0.2](https://github.com/love-edx/typescript-server/releases/tag/v1.0.2) - 2023-05-29 09:20:29
+
+*No description*
+
+### Feature
+
+- general:
+  - additon og changelog ([c4bfc15](https://github.com/love-edx/typescript-server/commit/c4bfc15916486bff9543b444398c9dc6a3ff9752)) ([#8](https://github.com/love-edx/typescript-server/pull/8))
+  - additon og changelog ([09240e3](https://github.com/love-edx/typescript-server/commit/09240e3943517bf10dc653e39b9c2b5be6222d84)) ([#8](https://github.com/love-edx/typescript-server/pull/8))
+  - additon og changelog ([afffee4](https://github.com/love-edx/typescript-server/commit/afffee45000c943d75dc9f0535e7e02569cc836a)) ([#8](https://github.com/love-edx/typescript-server/pull/8))
+
+### Bug Fixes
+
+- general:
+  - addition of comment ([4e18187](https://github.com/love-edx/typescript-server/commit/4e18187a1b4656d21986c2443a8049546cf1e70a)) ([#6](https://github.com/love-edx/typescript-server/pull/6))
+  - fixing ci issue ([1cab2dd](https://github.com/love-edx/typescript-server/commit/1cab2ddff163599b3b4a03e81b0587d3a5b42de1)) ([#6](https://github.com/love-edx/typescript-server/pull/6))
+  - fixing ci issue ([12052a3](https://github.com/love-edx/typescript-server/commit/12052a38123199521e5329d71867e87a28f3e43b)) ([#6](https://github.com/love-edx/typescript-server/pull/6))
+  - fixing ci issue ([6daca11](https://github.com/love-edx/typescript-server/commit/6daca116de18eb7adf59ce9245fc7201ac4ddffe)) ([#6](https://github.com/love-edx/typescript-server/pull/6))
+  - fixing ci issue ([37e0e1e](https://github.com/love-edx/typescript-server/commit/37e0e1e4235218e5713c4eb820f0244d0d1f140b)) ([#6](https://github.com/love-edx/typescript-server/pull/6))
+  - fixing ci issue ([c25fbe5](https://github.com/love-edx/typescript-server/commit/c25fbe5fd3c31af05041ff13c0188cf553821c68)) ([#6](https://github.com/love-edx/typescript-server/pull/6))
+  - fixing ci issue ([a39b47a](https://github.com/love-edx/typescript-server/commit/a39b47a589fc3cc4bdb8f4de5def3c8c66f37df3)) ([#6](https://github.com/love-edx/typescript-server/pull/6))
+  - fixing ci issue ([f477e82](https://github.com/love-edx/typescript-server/commit/f477e82dace0564dd2e5ba8b465eb00d86a44298)) ([#6](https://github.com/love-edx/typescript-server/pull/6))
+
 ## [v1.0.1](https://github.com/love-edx/typescript-server/releases/tag/v1.0.1) - 2023-05-25 11:26:12
 
 *No description*
