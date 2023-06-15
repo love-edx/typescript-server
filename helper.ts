@@ -4,7 +4,7 @@ let tempCronJobs = [];
 export async function jobScheduler(data: any) {
     const jobTime = await cronTimeHelper(cronJobs)
     new CronJob(jobTime, () => {
-        console.info('Webhook cronjob is running');
+        console.info('Webhook cronjob is running', jobTime);
     }).start();
     return jobTime;
 }
