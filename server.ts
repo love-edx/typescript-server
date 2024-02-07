@@ -48,7 +48,7 @@ const authSettings = {
   },
 };
 async function helloWorld() {
-  return { status: 200, message: 'Github Multiple actions working' };
+  return { status: 200, message: 'Github PR strict action' };
 }
 
 app.get('/', async (req, res) => {
