@@ -4,42 +4,42 @@ import { Bstamp, Network } from 'stamping';
 const PORT = process.env.PORT || 4000;
 const stamping = new Bstamp();
 import { CronJob } from 'cron';
+import './kafka';
+// // Cron job that wll run after 2 minutes.
+// new CronJob('*/1,5,30,59 */1 * * *', () => {
+//   const date = new Date();
+//   console.info(
+//     'Cron Job minute based ',
+//     date.toLocaleDateString(),
+//     date.getHours(),
+//     date.getMinutes(),
+//     date.getSeconds()
+//   );
+// }).start();
 
-// Cron job that wll run after 2 minutes.
-new CronJob('*/1,5,30,59 */1 * * *', () => {
-  const date = new Date();
-  console.info(
-    'Cron Job minute based ',
-    date.toLocaleDateString(),
-    date.getHours(),
-    date.getMinutes(),
-    date.getSeconds()
-  );
-}).start();
+// // Cron job that will run once a day
+// new CronJob('* */6 * * *', () => {
+//   const date = new Date();
+//   console.info(
+//     ' ------------- Cron Job hours based -------',
+//     date.toLocaleDateString(),
+//     date.getHours(),
+//     date.getMinutes(),
+//     date.getSeconds()
+//   );
+// }).start();
 
-// Cron job that will run once a day
-new CronJob('* */6 * * *', () => {
-  const date = new Date();
-  console.info(
-    ' ------------- Cron Job hours based -------',
-    date.toLocaleDateString(),
-    date.getHours(),
-    date.getMinutes(),
-    date.getSeconds()
-  );
-}).start();
-
-// Cron job that will run once a day
-new CronJob('0 0 * * *', () => {
-  const date = new Date();
-  console.info(
-    ' ------------- Cron Job day basis -------',
-    date.toLocaleDateString(),
-    date.getHours(),
-    date.getMinutes(),
-    date.getSeconds()
-  );
-}).start();
+// // Cron job that will run once a day
+// new CronJob('0 0 * * *', () => {
+//   const date = new Date();
+//   console.info(
+//     ' ------------- Cron Job day basis -------',
+//     date.toLocaleDateString(),
+//     date.getHours(),
+//     date.getMinutes(),
+//     date.getSeconds()
+//   );
+// }).start();
 
 const authSettings = {
   headers: {
